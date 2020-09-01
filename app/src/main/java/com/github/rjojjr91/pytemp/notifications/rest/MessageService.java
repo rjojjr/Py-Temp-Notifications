@@ -38,7 +38,7 @@ public class MessageService {
 	private void sendSMSMessage(String phoneNumber, String msg) {
 
         if (ContextCompat.checkSelfPermission(this,
-											  Manifest.permission.SEND_SMS)
+										Manifest.permission.SEND_SMS)
 			!= PackageManager.PERMISSION_GRANTED) {
             if (ActivityCompat.shouldShowRequestPermissionRationale(this,
 																	Manifest.permission.SEND_SMS)) {
