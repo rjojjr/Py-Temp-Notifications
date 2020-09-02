@@ -29,6 +29,10 @@ public class MessageService {
         return instance;
     }
 
+	private void startMsgThread(){
+		threadPool.execute(restThread());
+	}
+
     private Runnable restThread(){
         return () -> {
 			
